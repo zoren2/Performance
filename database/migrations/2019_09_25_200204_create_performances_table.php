@@ -15,7 +15,6 @@ class CreatePerformancesTable extends Migration
     {
         Schema::create('performances', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->integer('sample_id');
             $table->float('hard_drive_total');
             $table->float('hard_drive_free');
             $table->float('cpu_usage');
