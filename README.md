@@ -1,6 +1,6 @@
 Performance
 =============
-A simple MacOS computer diagnostic and performance analyzer CRM.
+A simple MacOS computer diagnostic and performance analyzer CRM built using Laravel PHP framework and Now UI Bootstrap 4 theme.
 
 ![Dashboard](/public/img/screenshot.png)
 
