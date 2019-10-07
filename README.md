@@ -75,3 +75,6 @@ Here's a sample cronjob task that runs every 5 minutes.
 
 */5 * * * * /project_path/resources/scripts/cron.sh
 
+## Credits
+
+Now UI Bootstrap Theme / CRM tools designed by Creative Tim
