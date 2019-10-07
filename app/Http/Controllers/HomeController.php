@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Performance;
 
 class HomeController extends Controller
 {
@@ -23,6 +24,15 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $performances = Performance::orderBy('id', 'desc')->take(5)->get();
+        $mostRecentPerformance = Performance::orderBy('id', 'desc')->take(1)->get()->first();
+        $cpuSamples = $performances->pluck('cpu_usage')->toArray();
+
+
+        return view('home')->with([
+            'performances' => $performances,
+            'currentPerformance' => $mostRecentPerformance,
+            'cpuSamples' => $cpuSamples
+        ]);
     }
 }
