@@ -2,6 +2,8 @@ Performance
 =============
 A simple MacOS computer diagnostic and performance analyzer CRM.
 
+![Dashboard](/public/img/screenshot.png)
+
 ## Requirements
 * PHP >= 7.1.3 with Composer
 * MySQL >= 5.6
@@ -78,3 +80,4 @@ Here's a sample cronjob task that runs every 5 minutes.
 ## Credits
 
 Now UI Bootstrap Theme / CRM tools designed by Creative Tim
+https://www.creative-tim.com/product/now-ui-kit
